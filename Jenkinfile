@@ -2,7 +2,7 @@ node
 {
 stage('checkout')
 {
-    checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/Mani082/Jenkins_demo_files.git']]])
+   checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/VinayReddyKallu/Pile_Line.git']]])
 }
 stage('Build')
 {
