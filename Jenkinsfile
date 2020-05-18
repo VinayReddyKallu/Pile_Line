@@ -19,5 +19,7 @@ stage('Test')
 stage('Deploy')
 {
     echo 'Deploy'
+   powershell 'jfrog rt c my_server --url=http://localhost:8081/artifactory --user=admin --password=vinay123'
+   powershell 'jfrog rt u HelloAll.class FirstRepository/build_version_${env:BUILD_NUMBER}/'
 }
 }
